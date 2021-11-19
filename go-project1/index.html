@@ -5,26 +5,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login form</title>
+  <style>
+    body  
+    {  
+        margin: 0;  
+        padding: 0;  
+        background-color:#6abadeba;  
+        font-family: 'Arial';  
+    }  
+    .login{  
+            width: 320px;  
+            overflow: hidden;  
+            margin: auto;  
+            margin: 20 0 0 450px;  
+            padding: 80px;  
+            background: #23463f;  
+            border-radius: 15px ;  
+              
+    }  
+    h2{  
+        text-align: center;  
+        color: #277582;  
+        padding: 20px;  
+    }  
+    label{  
+        color: #08ffd1;  
+        font-size: 17px;  
+    }  
+    #Uname{  
+        width: 300px;  
+        height: 30px;  
+        border: none;  
+        border-radius: 3px;  
+        padding-left: 8px;  
+    }  
+    #Pass{  
+        width: 300px;  
+        height: 30px;  
+        border: none;  
+        border-radius: 3px;  
+        padding-left: 8px;  
+          
+    }  
+    #log{  
+        width: 300px;  
+        height: 30px;  
+        border: none;  
+        border-radius: 17px;  
+        padding-left: 7px;  
+        color: blue;  
+      
+      
+    }  
+    span{  
+        color: white;  
+        font-size: 17px;  
+    }  
+    a{  
+        float: right;  
+        background-color: grey;  
+    }  
+
+    </style>
 </head>
     <body>
-        <br><br> 
-         <h1>&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbspLOGIN</h1>
-         <form method="post"action="/login">
-            <br>
-            USERNAME :  &nbsp<input type="text" name="usnam"/>
+<!--        
+         <h1>LOGIN</h1>
+         <form method="post"action="/login"> -->
+
+            <h2>LOGIN HERE </h2>    
+            <div class="login">    
+            <form id="login" method="post" action="/login">    
+                <label><b>User Name     
+                </b>
+                </label>    
+                <input type="text" name="usnam" id="Uname" placeholder="Username">    
+                <br><br>    
+                <label><b>Password     
+                </b>
+                </label>    
+                <input type="Password" name="pass" id="Pass" placeholder="password">    
+                <br><br> <br>
+                <input type="submit"id="log" value="Login">       
+                <br><br>    
+                
+                   
+            </form>     
+        </div>    
+            <!-- <br>
+            USERNAME :  <input type="text" name="usnam"/>
 
             <br><br><br> 
 
-            PASSWORD : &nbsp&nbsp<input type="password" name="pass"/>
-<!--            
+            PASSWORD : <input type="password" name="pass"/>
+            
             <br><br><br> 
 
-            UP-LOAD  : &nbsp &nbsp  &nbsp <input type="file" name="img"> -->
-
+            UP-LOAD  : &nbsp &nbsp  &nbsp <input type="file" name="img"> 
+ 
             <br><br><br><br> 
-            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-            &nbsp &nbsp&nbsp &nbsp &nbsp<input type="submit" value="Login"/>
+          <input type="submit" value="Login"/> -->
 
          </form>
-    </body>
+        </body>
     </html>
